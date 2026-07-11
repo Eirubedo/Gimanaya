@@ -167,8 +167,13 @@
             <img id="post-image" src="" alt="Featured Visual" class="relative z-10 max-h-full max-w-full object-contain" />
         </div>
 
-        <!-- Article Content -->
-        <div id="post-content" class="font-body-lg text-on-surface-variant text-base space-y-6 leading-relaxed max-w-none">
+        <!-- Gimana ya? Inquiry Box -->
+        <div id="post-question-box" class="bg-secondary/5 border-l-4 border-secondary p-6 rounded-r-xl mb-10 hidden">
+            <span class="font-headline text-lg font-bold text-secondary block mb-1">Gimana ya?</span>
+            <p id="post-question" class="italic text-primary font-medium text-base">Question text</p>
+        </div>
+
+        <!-- Article Content --> class="font-body-lg text-on-surface-variant text-base space-y-6 leading-relaxed max-w-none">
             <!-- Dynamic paragraphs injected here -->
         </div>
 
@@ -200,13 +205,14 @@
 
 <!-- Dataset & Page Controller -->
 <script>
-    const articles = {
+        const articles = {
         "ijmi": {
             title: "Q1 Publication & Editor's Choice Award: Feelings Behind Words",
             category: "Achievements",
             date: "January 2026",
             readtime: "5 min read",
             image: "images/ijmi_editors_choice.png",
+            question: "How effective is Natural Language Processing in replacing a clinician's role for diagnosing mental health disorders, and what are the actual boundaries?",
             externalLink: "https://nursing.ui.ac.id/alumni-fik-ui-raih-prestasi-internasional-publikasi-q1-dan-penghargaan-editors-choice-di-jurnal-international-journal-of-medical-informatics/",
             content: [
                 "I am incredibly proud to announce that my systematic review titled <em>'Feelings behind words: A systematic review on how effective is NLP-based assessment for mental health diagnosis in human studies'</em> has been featured as the Editor's Choice in the prestigious <strong>International Journal of Medical Informatics (IJMI)</strong>. Achieving a Q1 publication is a monumental milestone, and this recognition reinforces the critical intersection of clinical psychiatric nursing and artificial intelligence.",
@@ -223,6 +229,7 @@
             date: "July 2026",
             readtime: "5 min read",
             image: "images/timur_meeting.jpg",
+            question: "How can we scale low-intensity psychiatric nursing models to remote, underserved regions in East Indonesia where clinical specialists are scarce?",
             content: [
                 "On July 6-7, 2026, I had the privilege of joining my esteemed mentors and colleagues—Prof. Herni Susanti, Prof. Budi Anna Keliat, Pak Giur Hargiana, and Bu Ria Utami Panjaitan—at Hotel Aston TB Simatupang, Jakarta Selatan. The goal of this two-day evaluation meeting was to review the early research data of the TIMUR project.",
                 "The TIMUR project represents a major step forward in bringing mental health services to underserved regions in Indonesia, specifically in Ternate, East Indonesia. The project implements a Low-Intensity Psychological Intervention protocol designed to train local health workers and community representatives to offer primary psychological support.",
@@ -235,6 +242,7 @@
             date: "July 2026",
             readtime: "5 min read",
             image: "images/answa_thesis.jpg",
+            question: "How can we design a non-judgmental, private screening tool to detect hidden anxiety and suicide risks in chronic hypertension patients during routine care?",
             content: [
                 "On Wednesday, July 1, 2026, I successfully defended my Master's Thesis at the Faculty of Nursing, Universitas Indonesia. The thesis, titled <em>'Pemanfaatan Chatbot Kesehatan Jiwa Berbasis Kecerdasan Buatan Untuk Deteksi Ansietas, Gangguan Citra Tubuh, dan Risiko Bunuh Diri pada Klien Hipertensi'</em>, marks the culmination of my magister studies.",
                 "I am deeply grateful for the guidance and support of my academic supervisors during this research journey. I was supervised by <strong>Prof. Dr. Budi Anna Keliat, S.Kp., M.App.Sc.</strong> (First Supervisor, Faculty of Nursing) and <strong>Prof. Dr. Achmad Nizar Hidayanto, S.Kom., M.Kom.</strong> (Second Supervisor, Faculty of Computer Science).",
@@ -249,6 +257,7 @@
             date: "February 11, 2026",
             readtime: "4 min read",
             image: "images/dkjps_workshop.png",
+            question: "How do we build collaborative pathways between top-tier global universities and local health cadres to translate academic MHPSS frameworks into community impact?",
             content: [
                 "I am honored to serve as the moderator for the Workshop on Community Engagement Grant (Pengabdian Kepada Masyarakat) – World Class University Program focusing on Mental Health and Psychosocial Support (MHPSS/DKJPS).",
                 "This inspiring event brings together distinguished experts from leading institutions to discuss the implementation, evaluation, and future directions of mental health and psychosocial support initiatives in communities.",
@@ -267,6 +276,7 @@
             date: "December 2025",
             readtime: "4 min read",
             image: "images/research_small_talk.png",
+            question: "How can we bridge the gap between academic psychiatric nursing research and corporate risk management structures for sustainable health interventions?",
             externalLink: "https://nursing.ui.ac.id/fik-ui-perkuat-kolaborasi-riset-lintas-sektor-melalui-research-small-talk-pt-reasuransi-indonesia-utama/",
             content: [
                 "I had the honor of representing the Faculty of Nursing, Universitas Indonesia (FIK UI), at the 'Research Small Talk' event hosted by PT Reasuransi Indonesia Utama (Indonesia Re). The event focused on creating cross-sector research collaborations between academic institutions and corporate industries.",
@@ -280,6 +290,7 @@
             date: "February 2026",
             readtime: "4 min read",
             image: "images/inwecna_award.jpg",
+            question: "How do we address the heavy psychological stress and pain of patients with chronic diabetic ulcers to accelerate their physiological wound healing?",
             content: [
                 "I am absolutely thrilled to share that I participated as a speaker at the 5th International and 9th Biennial InWECNA Conference on February 7-8, 2026. The conference, organized by the Indonesian Wound, Enterostomal and Continence Nurses Association (InWECNA), was an incredible gathering of clinical experts and researchers.",
                 "I presented my case study titled <em>'Mindfulness Therapy in Chronic Diabetic Ulcers'</em>. In wound care, the focus is often strictly physical: debridement, dressing selection, and infection control. However, chronic wounds place a heavy psychological toll on patients, which in turn elevates cortisol levels and impairs natural tissue healing.",
@@ -292,6 +303,7 @@
             date: "February 2026",
             readtime: "5 min read",
             image: "images/perixa_batin.jpg",
+            question: "Can we leverage virtual reality and personality-type profiles to deliver a safe, self-guided, 5-minute intervention that lowers acute youth anxiety?",
             externalLink: "https://nursing.ui.ac.id/perixa-batin-solusi-inovatif-untuk-menjawab-masalah-kesehatan-mental-generasi-muda/",
             content: [
                 "Our team at FIK UI has developed PeriXa Batin, a safe, 5-minute virtual reality therapy application designed to address youth anxiety. Anxiety disorders in adolescents and young adults are rising rapidly, yet access to mental health practitioners remains limited.",
@@ -305,6 +317,7 @@
             date: "September 2025",
             readtime: "4 min read",
             image: "images/thrive_again_group.jpg",
+            question: "How do healthcare researchers step outside systematic frameworks and clinical checklists to address the personal dignity and emotional resilience of cancer survivors?",
             content: [
                 "On September 27, 2025, I joined the brilliant community at the 'Thrive Again and Stronger Together' event. Speaking on wound management with cancer survivors and fighters was a profound reminder of why we dedicate our lives to healthcare innovation.",
                 "When you spend your daily routine navigating high-level systematic frameworks, peer-reviewed journals, and clinical databases, returning to the grassroots level is incredibly grounding. In that room, wound care completely ceased to be a clinical checklist or a textbook protocol—it became a deeply personal discussion about dignity, physical recovery, and absolute psychological resilience.",
@@ -317,6 +330,7 @@
             date: "May 2025",
             readtime: "5 min read",
             image: "images/kader_batutulis.jpg",
+            question: "How do we empower local neighborhood volunteers to identify early psychosocial risks and construct a sustainable continuity of care system?",
             externalLink: "https://nursing.ui.ac.id/ui-hadir-di-tengah-warga-kader-kesehatan-jiwa-siap-dampingi-warga-hadapi-masalah-mental/",
             content: [
                 "In May 2025, I served as the Project Chairperson for a community service program in Kelurahan Batutulis, Bogor Selatan, titled <em>'Optimalisasi Pemberdayaan Masyarakat melalui Pelatihan Kader dengan Topik Menggerakkan Kelompok Keluarga Risiko dan Continuity of Care'</em>.",
@@ -330,6 +344,7 @@
             date: "November 2024",
             readtime: "5 min read",
             image: "images/esa_unggul_seminar.png",
+            question: "How can we train clinical wound care nurses to use bedside ultrasound imaging to detect early-stage osteomyelitis before it leads to diabetic limb amputation?",
             content: [
                 "On November 22-23, 2024, I had the privilege of participating as a speaker in the 'Ultrasound for Osteomyelitis Clinical Assessment, Research and Training for Wound Care Nurses' seminar and workshop hosted by Universitas Esa Unggul.",
                 "In collaboration with GWS Wellness and my research partner Adam Astrada, we conducted a series of clinical training modules. The program focused on instructing wound care nurses in the use of localized ultrasound imaging to detect early-stage osteomyelitis in patients with diabetic foot ulcers.",
@@ -342,6 +357,7 @@
             date: "October 2024",
             readtime: "4 min read",
             image: "images/gws_woundcare_workshop.jpg",
+            question: "How do we standardize advanced dressing protocols and clinical pain management guidelines across diverse health facilities?",
             content: [
                 "On October 15, 2024, I participated as a speaker at the Woundcare Workshop organized by GWS Medika. The workshop served as a remarkable gathering of healthcare professionals, researchers, and practitioners dedicated to advancing wound care practices.",
                 "During the sessions, I shared insights alongside my research partner Adam Astrada and discussed clinical cases with industry colleagues, including Rafael Mazuz. Knowledge sharing is crucial for standardized treatment protocols across clinical facilities.",
@@ -354,6 +370,7 @@
             date: "August 23, 2024",
             readtime: "3 min read",
             image: "images/burnout_poster.jpg",
+            question: "What could go wrong when I'm pursuing this postgraduate degree, and how do I deal with it?",
             content: [
                 "I am honored to announce that I won <strong>1st Place</strong> in the Poster Competition during the Introduction to Faculty Academic System (Pengenalan Sistem Akademik Fakultas—PSAF) Postgraduate Program, held on August 20-22, 2024.",
                 "The event was organized by the Postgraduate Student Association (HMP) of the Faculty of Nursing, Universitas Indonesia (@nursing_universitasindonesia and @hmp.fik.ui). PSAF provides an essential transition and welcoming phase for incoming postgraduate students, guiding them toward academic excellence and community integration.",
@@ -364,7 +381,7 @@
         }
     };
 
-    // Controller
+    // Controller/ Controller
     document.addEventListener("DOMContentLoaded", () => {
         const urlParams = new URLSearchParams(window.location.search);
         const articleId = urlParams.get("id");
@@ -387,6 +404,16 @@
         const imgEl = document.getElementById("post-image");
         imgEl.src = data.image;
         imgEl.alt = data.title;
+
+        // Populate question block
+        const qBox = document.getElementById("post-question-box");
+        const qEl = document.getElementById("post-question");
+        if (data.question) {
+            qEl.innerText = data.question;
+            qBox.classList.remove("hidden");
+        } else {
+            qBox.classList.add("hidden");
+        }
 
         const imgBlurEl = document.getElementById("post-image-blur");
         imgBlurEl.src = data.image;
