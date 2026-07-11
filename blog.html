@@ -136,9 +136,19 @@
             <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="projects.html">Projects</a>
             <a class="text-secondary font-bold border-b-2 border-secondary transition-colors duration-300" href="blog.html">Blog</a>
         </nav>
-        <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md hover:bg-secondary transition-all active:opacity-70" onclick="window.location.href='connect.html'">
-            Connect
+        <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md hover:bg-secondary transition-all active:opacity-70" onclick="window.location.href='connect.html'">Connect</button>
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-btn" class="md:hidden flex items-center justify-center p-2 text-primary focus:outline-none" aria-label="Toggle Menu">
+            <span class="material-symbols-outlined text-2xl">menu</span>
         </button>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-menu" class="hidden md:hidden absolute top-[68px] left-0 w-full bg-surface/95 backdrop-blur-lg border-b border-outline-variant/20 shadow-lg py-6 px-8 flex flex-col gap-4 z-40">
+        <a class="text-on-surface-variant font-body-md hover:text-secondary pl-3 transition-colors" href="index.html">Home</a>
+        <a class="text-on-surface-variant font-body-md hover:text-secondary pl-3 transition-colors" href="publications.html">Publications</a>
+        <a class="text-on-surface-variant font-body-md hover:text-secondary pl-3 transition-colors" href="projects.html">Projects</a>
+        <a class="text-secondary font-bold border-l-4 border-secondary pl-3" href="blog.html">Blog</a>
     </div>
 </header>
 
@@ -581,6 +591,29 @@
             section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
             observer.observe(section);
         });
+    });
+</script>
+<script>
+    // Mobile navigation toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+            const isHidden = mobileMenu.classList.contains('hidden');
+            if (isHidden) {
+                mobileMenu.classList.remove('hidden');
+                menuBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">close</span>';
+            } else {
+                mobileMenu.classList.add('hidden');
+                menuBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
+            }
+        });
+    }
+    window.addEventListener('resize', () => {
+        if (window.innerWidth >= 768 && mobileMenu && !mobileMenu.classList.contains('hidden')) {
+            mobileMenu.classList.add('hidden');
+            menuBtn.innerHTML = '<span class="material-symbols-outlined text-2xl">menu</span>';
+        }
     });
 </script>
 </body>
