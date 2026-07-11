@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Projects | Gimanaya | Eka Putri Yulianti</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#191c1e",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "on-primary-container": "#8590a6",
+                        "inverse-primary": "#bcc7de",
+                        "on-background": "#0b1c30",
+                        "outline-variant": "#c5c6cd",
+                        "background": "#f8f9ff",
+                        "on-primary-fixed-variant": "#3c475a",
+                        "tertiary-container": "#26292b",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "secondary-container": "#86f2e4",
+                        "primary-fixed": "#d8e3fb",
+                        "on-surface": "#0b1c30",
+                        "on-tertiary-container": "#8d9092",
+                        "tertiary": "#111516",
+                        "surface-dim": "#cbdbf5",
+                        "primary": "#091426",
+                        "surface-container-high": "#dce9ff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#89f5e7",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#213145",
+                        "primary-container": "#1e293b",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed": "#111c2d",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005049",
+                        "on-surface-variant": "#45474c",
+                        "surface-tint": "#545f73",
+                        "secondary": "#006a61",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#bcc7de",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "tertiary-fixed": "#e0e3e5",
+                        "surface-variant": "#d3e4fe",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#75777d",
+                        "surface-container": "#e5eeff",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#006f66"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "8px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "caption": ["Plus Jakarta Sans"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background-color: rgba(248, 249, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 70% 30%, rgba(134, 242, 228, 0.1) 0%, transparent 50%);
+        }
+        .editorial-rule {
+            height: 0.5px;
+            background-color: #CBD5E1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-nav">
+    <div class="flex items-center justify-between px-6 md:px-16 py-4 max-w-container-max mx-auto">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">clinical_notes</span>
+            <span class="font-headline-md text-headline-md font-bold text-primary">Gimanaya</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="index.html">Home</a>
+            <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="publications.html">Publications</a>
+            <a class="text-secondary font-bold border-b-2 border-secondary transition-colors duration-300" href="projects.html">Projects</a>
+            <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="blog.html">Blog</a>
+        </nav>
+        <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md hover:bg-secondary transition-all active:opacity-70" onclick="window.location.href='connect.html'">
+            Connect
+        </button>
+    </div>
+</header>
+
+<main class="pt-24">
+    <!-- Hero Section -->
+    <section class="relative px-6 md:px-16 py-16 md:py-24 hero-gradient max-w-container-max mx-auto">
+        <div class="max-w-3xl">
+            <span class="font-caption text-caption uppercase tracking-wider text-secondary font-bold mb-3 block">Development & Prototypes</span>
+            <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
+                Modules & Prototypes
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Explore our research initiatives and digital systems aiming to solve real-life problems in healthcare, mental health, and academic publishing.
+            </p>
+        </div>
+    </section>
+
+    <!-- Prototypes Grid -->
+    <section class="px-6 md:px-16 pb-20 max-w-container-max mx-auto">
+        <div class="editorial-rule mb-16"></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- PerixaBatin -->
+            <div class="group p-8 bg-white/70 rounded-xl border border-outline-variant/30 hover:border-secondary/20 transition-all duration-500 hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-secondary-container/30 text-secondary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">view_in_ar</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-3">PerixaBatin</h3>
+                    <p class="font-body-md text-on-surface-variant mb-6">
+                        Extended reality hypnotherapy platform that reduces anxiety through immersive, clinically guided virtual environments.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+                    <span class="text-xs text-on-surface-variant font-medium">Virtual Reality Platform</span>
+                    <a href="https://perixabatin.com" target="_blank" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Launch Demo <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- ANSWA -->
+            <div class="group p-8 bg-white/70 rounded-xl border border-outline-variant/30 hover:border-secondary/20 transition-all duration-500 hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-secondary-container/30 text-secondary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">forum</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-3">ANSWA</h3>
+                    <p class="font-body-md text-on-surface-variant mb-6">
+                        A conversational AI system that screens for anxiety, body image issues, and suicide risk in hypertensive patients.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+                    <span class="text-xs text-on-surface-variant font-medium">Conversational Agent</span>
+                    <a href="https://answa.gimanaya.com" target="_blank" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Launch Demo <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Erudate -->
+            <div class="group p-8 bg-white/70 rounded-xl border border-outline-variant/30 hover:border-secondary/20 transition-all duration-500 hover:shadow-xl flex flex-col justify-between">
+                <div>
+                    <div class="w-12 h-12 bg-secondary-container/30 text-secondary rounded-lg flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <span class="material-symbols-outlined">terminal</span>
+                    </div>
+                    <h3 class="font-headline-sm text-headline-sm text-primary mb-3">Erudate</h3>
+                    <p class="font-body-md text-on-surface-variant mb-6">
+                        An academic intelligence system that helps researchers find journals, avoid desk rejects, and publish strategically.
+                    </p>
+                </div>
+                <div class="pt-4 border-t border-outline-variant/20 flex justify-between items-center">
+                    <span class="text-xs text-on-surface-variant font-medium">Decision Support System</span>
+                    <a href="https://www.erudate.gimanaya.com" target="_blank" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Launch Demo <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaborators Section -->
+    <section class="px-6 md:px-16 py-section-gap max-w-container-max mx-auto bg-white/50">
+        <div class="mb-16">
+            <div class="editorial-rule mb-8"></div>
+            <h2 class="font-headline-md text-headline-md text-primary">Collaborators</h2>
+            <p class="font-body-md text-on-surface-variant mt-2 max-w-2xl">
+                Bridging expertise across psychiatric nursing, computer science, and clinical practice to ensure our systems are clinically robust and technologically state-of-the-art.
+            </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Collaborator 1 -->
+            <div class="p-8 bg-white/60 rounded-xl border border-outline-variant/25 flex flex-col justify-between">
+                <div>
+                    <div class="h-12 flex items-center mb-6">
+                        <img src="images/universitas_indonesia_logo.png" alt="Universitas Indonesia" class="h-10 object-contain" />
+                    </div>
+                    <h4 class="font-headline-sm text-lg text-primary font-bold mb-2">Prof. Dr. Budi Anna Keliat, S.Kp., M. App.Sc</h4>
+                    <p class="font-caption text-secondary uppercase font-bold tracking-wider mb-4">Psychiatric & Mental Health</p>
+                    <p class="font-body-md text-on-surface-variant text-sm">Department of Psychiatric & Mental Health Nursing, Universitas Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Collaborator 2 -->
+            <div class="p-8 bg-white/60 rounded-xl border border-outline-variant/25 flex flex-col justify-between">
+                <div>
+                    <div class="h-12 flex items-center mb-6">
+                        <img src="images/universitas_indonesia_logo.png" alt="Universitas Indonesia" class="h-10 object-contain" />
+                    </div>
+                    <h4 class="font-headline-sm text-lg text-primary font-bold mb-2">Prof. Dr. Achmad Nizar Hidayanto, S.Kom., M.Kom</h4>
+                    <p class="font-caption text-secondary uppercase font-bold tracking-wider mb-4">Computer Science & Systems</p>
+                    <p class="font-body-md text-on-surface-variant text-sm">The Faculty of Computer Science, Universitas Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Collaborator 3 -->
+            <div class="p-8 bg-white/60 rounded-xl border border-outline-variant/25 flex flex-col justify-between">
+                <div>
+                    <div class="h-12 flex items-center mb-6">
+                        <img src="images/universitas_indonesia_logo.png" alt="Universitas Indonesia" class="h-10 object-contain" />
+                    </div>
+                    <h4 class="font-headline-sm text-lg text-primary font-bold mb-2">Prof. Herni Susanti, S.Kp., M.N., Ph.D</h4>
+                    <p class="font-caption text-secondary uppercase font-bold tracking-wider mb-4">Psychiatric & Mental Health</p>
+                    <p class="font-body-md text-on-surface-variant text-sm">Head of Mental Health & Psychiatric Nursing Research Cluster, Universitas Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Collaborator 4 -->
+            <div class="p-8 bg-white/60 rounded-xl border border-outline-variant/25 flex flex-col justify-between">
+                <div>
+                    <div class="h-12 flex items-center mb-6">
+                        <img src="images/universitas_indonesia_logo.png" alt="Universitas Indonesia" class="h-10 object-contain" />
+                    </div>
+                    <h4 class="font-headline-sm text-lg text-primary font-bold mb-2">Dr. Sigit Mulyono, S.Kp., MN</h4>
+                    <p class="font-caption text-secondary uppercase font-bold tracking-wider mb-4">Community Health Nursing</p>
+                    <p class="font-body-md text-on-surface-variant text-sm">Department of Community Health Nursing, Universitas Indonesia</p>
+                </div>
+            </div>
+
+            <!-- Collaborator 5 -->
+            <div class="p-8 bg-white/60 rounded-xl border border-outline-variant/25 flex flex-col justify-between">
+                <div>
+                    <div class="h-12 flex items-center mb-6">
+                        <img src="images/monash_university_logo.png" alt="Monash University Malaysia" class="h-8 object-contain" />
+                    </div>
+                    <h4 class="font-headline-sm text-lg text-primary font-bold mb-2">Dr. Adam Astrada, S.Kep., Ns. MHS, CNS, DHSc</h4>
+                    <p class="font-caption text-secondary uppercase font-bold tracking-wider mb-4">Medicine & Clinical Research</p>
+                    <p class="font-body-md text-on-surface-variant text-sm">Jeffrey Cheah School of Medicine and Health Sciences, Monash University Malaysia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full rounded-t-xl mt-12">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-12 gap-8 max-w-container-max mx-auto">
+        <div class="flex flex-col gap-2 items-center md:items-start">
+            <span class="font-headline-sm text-headline-sm font-bold text-on-primary">Gimanaya</span>
+            <p class="text-on-primary-container font-body-md">© 2024 Eka Putri Yulianti. All rights reserved.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 md:gap-10">
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="https://orcid.org/0009-0003-6643-0353" target="_blank">ORCID</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="mailto:eka.putri31@ui.ac.id">Email</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="https://www.linkedin.com/in/ekaputriyulianti" target="_blank">LinkedIn</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="#">Privacy Policy</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="#">Terms</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Micro-interactions for smooth revealing of elements
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    });
+</script>
+</body>
+</html>

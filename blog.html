@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Blog & Reflections | Gimanaya | Ns. Eka Putri Yulianti, S.Kep., M.Kep</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#191c1e",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "on-primary-container": "#8590a6",
+                        "inverse-primary": "#bcc7de",
+                        "on-background": "#0b1c30",
+                        "outline-variant": "#c5c6cd",
+                        "background": "#f8f9ff",
+                        "on-primary-fixed-variant": "#3c475a",
+                        "tertiary-container": "#26292b",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "secondary-container": "#86f2e4",
+                        "primary-fixed": "#d8e3fb",
+                        "on-surface": "#0b1c30",
+                        "on-tertiary-container": "#8d9092",
+                        "tertiary": "#111516",
+                        "surface-dim": "#cbdbf5",
+                        "primary": "#091426",
+                        "surface-container-high": "#dce9ff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#89f5e7",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#213145",
+                        "primary-container": "#1e293b",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed": "#111c2d",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005049",
+                        "on-surface-variant": "#45474c",
+                        "surface-tint": "#545f73",
+                        "secondary": "#006a61",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#bcc7de",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "tertiary-fixed": "#e0e3e5",
+                        "surface-variant": "#d3e4fe",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#75777d",
+                        "surface-container": "#e5eeff",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#006f66"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "8px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "caption": ["Plus Jakarta Sans"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background-color: rgba(248, 249, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 70% 30%, rgba(134, 242, 228, 0.1) 0%, transparent 50%);
+        }
+        .editorial-rule {
+            height: 0.5px;
+            background-color: #CBD5E1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-nav">
+    <div class="flex items-center justify-between px-6 md:px-16 py-4 max-w-container-max mx-auto">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">clinical_notes</span>
+            <span class="font-headline-md text-headline-md font-bold text-primary">Gimanaya</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="index.html">Home</a>
+            <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="publications.html">Publications</a>
+            <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="projects.html">Projects</a>
+            <a class="text-secondary font-bold border-b-2 border-secondary transition-colors duration-300" href="blog.html">Blog</a>
+        </nav>
+        <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md hover:bg-secondary transition-all active:opacity-70" onclick="window.location.href='connect.html'">
+            Connect
+        </button>
+    </div>
+</header>
+
+<main class="pt-24">
+    <!-- Intro / Hero Area -->
+    <section class="relative px-6 md:px-16 py-16 md:py-24 hero-gradient max-w-container-max mx-auto">
+        <div class="max-w-3xl">
+            <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6 leading-tight">
+                Blog & Reflections
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Insights, notes, and records of academic work exploring the intersections of clinical psychiatric nursing, software engineering, and decision science.
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="px-6 md:px-16 py-10 max-w-container-max mx-auto">
+        <div class="editorial-rule mb-12"></div>
+        <div class="bg-white/60 border border-outline-variant/30 rounded-2xl overflow-hidden hover:shadow-xl transition-all duration-500 grid grid-cols-1 md:grid-cols-12 gap-0 group">
+            <div class="md:col-span-7 h-64 md:h-full min-h-[300px] overflow-hidden relative">
+                <img src="images/ijmi_editors_choice.png" alt="International Journal of Medical Informatics Editor's Choice Announcement" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+            </div>
+            <div class="md:col-span-5 p-8 md:p-12 flex flex-col justify-between">
+                <div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <span class="px-3 py-1 bg-secondary/10 text-secondary rounded-full text-xs font-bold uppercase tracking-wider">Achievement</span>
+                        <span class="text-xs text-on-surface-variant">January 2026</span>
+                    </div>
+                    <h2 class="font-headline-sm text-2xl md:text-3xl text-primary mb-4 leading-tight">
+                        Featured by FIK UI: Q1 Publication & Editor's Choice Award in IJMI
+                    </h2>
+                    <p class="font-body-md text-on-surface-variant mb-6 text-sm md:text-base">
+                        Grateful to share that the Faculty of Nursing (FIK UI) has featured our academic achievement. As lead author, I collaborated with our research cluster to publish a systematic review on using Natural Language Processing (NLP) to assist mental health diagnostics, which was honored with the Editor's Choice award in the International Journal of Medical Informatics (IJMI).
+                    </p>
+                </div>
+                <div class="pt-6 border-t border-outline-variant/20 flex justify-between items-center">
+                    <span class="text-xs text-on-surface-variant font-medium">Informatics & Research</span>
+                    <a href="https://nursing.ui.ac.id/alumni-fik-ui-raih-prestasi-internasional-publikasi-q1-dan-penghargaan-editors-choice-di-jurnal-international-journal-of-medical-informatics/" target="_blank" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Read UI Feature <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Post Grid -->
+    <section class="px-6 md:px-16 py-12 max-w-container-max mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Post 1: TIMUR Research Meeting -->
+            <div class="bg-white/50 border border-outline-variant/20 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="images/timur_meeting.jpg" alt="TIMUR Research Meeting Group Photo" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-xs text-secondary font-bold uppercase">Research Meeting</span>
+                            <span class="text-xs text-on-surface-variant">• July 2026</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-primary mb-3">
+                            Evaluating TIMUR: Low-Intensity Psychological Intervention in Ternate
+                        </h3>
+                        <p class="font-body-md text-on-surface-variant text-sm line-clamp-3">
+                            Grateful to join Prof. Herni Susanti, Prof. Budi Anna Keliat, Pak Giur Hargiana, and Bu Ria Utami Panjaitan in our evaluation meeting at Hotel Aston Simatupang, Jakarta. We analyzed the early research data of the TIMUR project, implementing low-intensity psychiatric interventions in Ternate, East Indonesia.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 border-t border-outline-variant/10 flex justify-between items-center mt-4">
+                    <span class="text-xs text-on-surface-variant">5 min read</span>
+                    <a href="#" class="inline-flex items-center gap-1 text-secondary text-sm font-bold hover:gap-2 transition-all">
+                        Read Reflection <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Post 2: ANSWA -->
+            <div class="bg-white/50 border border-outline-variant/20 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="images/blog_secondary.png" alt="Nursing Informatics" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-xs text-secondary font-bold uppercase">Development</span>
+                            <span class="text-xs text-on-surface-variant">• June 2026</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-primary mb-3">
+                            Refactoring ANSWA: Designing Mobile Systems for Self-Care
+                        </h3>
+                        <p class="font-body-md text-on-surface-variant text-sm line-clamp-3">
+                            Inside the tech pipeline of the ANSWA ecosystem. An exploration of React Native, offline-first clinical data synchronization, and state management in mobile psychiatric modules.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 border-t border-outline-variant/10 flex justify-between items-center mt-4">
+                    <span class="text-xs text-on-surface-variant">4 min read</span>
+                    <a href="#" class="inline-flex items-center gap-1 text-secondary text-sm font-bold hover:gap-2 transition-all">
+                        Read <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Post 3: Indonesia Re -->
+            <div class="bg-white/50 border border-outline-variant/20 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="images/research_small_talk.png" alt="Research Small Talk with Indonesia Re" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-xs text-secondary font-bold uppercase">Collaboration</span>
+                            <span class="text-xs text-on-surface-variant">• December 2025</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-primary mb-3">
+                            Cross-Sector Collaboration: Research Small Talk with Indonesia Re
+                        </h3>
+                        <p class="font-body-md text-on-surface-variant text-sm line-clamp-3">
+                            Honored to join Prof. Herni Susanti representing FIK UI at Indonesia Re's Research Small Talk. We discussed bridging academic nursing research with corporate industries to solve public welfare risk management.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 border-t border-outline-variant/10 flex justify-between items-center mt-4">
+                    <span class="text-xs text-on-surface-variant">4 min read</span>
+                    <a href="https://nursing.ui.ac.id/fik-ui-perkuat-kolaborasi-riset-lintas-sektor-melalui-research-small-talk-pt-reasuransi-indonesia-utama/" target="_blank" class="inline-flex items-center gap-1 text-secondary text-sm font-bold hover:gap-2 transition-all">
+                        Read Feature <span class="material-symbols-outlined text-xs">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Post 4: InWECNA Presentation Award -->
+            <div class="bg-white/50 border border-outline-variant/20 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="images/inwecna_award.jpg" alt="Eka receiving Best Oral Presenter certificate at InWECNA" class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-xs text-secondary font-bold uppercase">Awards & Conferences</span>
+                            <span class="text-xs text-on-surface-variant">• February 2026</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-primary mb-3">
+                            Mindfulness in Wound Care: Best Oral Presenter at InWECNA
+                        </h3>
+                        <p class="font-body-md text-on-surface-variant text-sm line-clamp-3">
+                            Thrilled to have presented my case study on Mindfulness Therapy in Chronic Diabetic Ulcers at the 5th International and 9th Biennial InWECNA Conference, and incredibly grateful to be recognized as the Best Oral Presenter. I truly believe that integrating mental health practices into wound care is key to evolving our clinical services.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 border-t border-outline-variant/10 flex justify-between items-center mt-4">
+                    <span class="text-xs text-on-surface-variant">4 min read</span>
+                    <a href="#" class="inline-flex items-center gap-1 text-secondary text-sm font-bold hover:gap-2 transition-all">
+                        Read reflection <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Post 5: PeriXa Batin -->
+            <div class="bg-white/50 border border-outline-variant/20 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="images/perixa_batin.jpg" alt="PeriXa Batin Team holding awards" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-xs text-secondary font-bold uppercase">Innovation</span>
+                            <span class="text-xs text-on-surface-variant">• February 2026</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-primary mb-3">
+                            PeriXa Batin: VR-Based Therapy for Youth Mental Health
+                        </h3>
+                        <p class="font-body-md text-on-surface-variant text-sm line-clamp-3">
+                            Our team at FIK UI designed PeriXa Batin, a safe, 5-minute virtual reality therapy application. It utilizes personality validations (Myers-Briggs, Enneagram, Jungian Archetypes) to tailor sessions that trigger positive cognitive responses for anxiety reduction.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 border-t border-outline-variant/10 flex justify-between items-center mt-4">
+                    <span class="text-xs text-on-surface-variant">5 min read</span>
+                    <a href="https://nursing.ui.ac.id/perixa-batin-solusi-inovatif-untuk-menjawab-masalah-kesehatan-mental-generasi-muda/" target="_blank" class="inline-flex items-center gap-1 text-secondary text-sm font-bold hover:gap-2 transition-all">
+                        Read Feature <span class="material-symbols-outlined text-xs">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Post 6: Kader Batutulis -->
+            <div class="bg-white/50 border border-outline-variant/20 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="images/kader_batutulis.jpg" alt="Kader Batutulis Training Group" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-xs text-secondary font-bold uppercase">Community Service</span>
+                            <span class="text-xs text-on-surface-variant">• May 2025</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-primary mb-3">
+                            Empowering Communities: Training Mental Health Cadres in Bogor
+                        </h3>
+                        <p class="font-body-md text-on-surface-variant text-sm line-clamp-3">
+                            Grateful to have served as Project Chairperson for our mental health cadre training in Batutulis, Bogor. We trained 23 local cadres in SRQ-20 detection and established vital neighborhood Self-Help Groups (SHGs).
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 border-t border-outline-variant/10 flex justify-between items-center mt-4">
+                    <span class="text-xs text-on-surface-variant">5 min read</span>
+                    <a href="https://nursing.ui.ac.id/ui-hadir-di-tengah-warga-kader-kesehatan-jiwa-siap-dampingi-warga-hadapi-masalah-mental/" target="_blank" class="inline-flex items-center gap-1 text-secondary text-sm font-bold hover:gap-2 transition-all">
+                        Read Feature <span class="material-symbols-outlined text-xs">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Post 7: Esa Unggul Seminar -->
+            <div class="bg-white/50 border border-outline-variant/20 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="images/esa_unggul_seminar.png" alt="Ultrasound for Osteomyelitis Seminar with Adam Astrada" class="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-xs text-secondary font-bold uppercase">Seminar & Training</span>
+                            <span class="text-xs text-on-surface-variant">• November 2024</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-primary mb-3">
+                            Ultrasound for Osteomyelitis: Clinical Training at Esa Unggul
+                        </h3>
+                        <p class="font-body-md text-on-surface-variant text-sm line-clamp-3">
+                            Glad to have participated as one of the speakers in the 'Ultrasound for Osteomyelitis Clinical Assessment, Research and Training for Wound Care Nurses' seminar and workshop hosted by Universitas Esa Unggul and supported by GWS Wellness. I collaborated with my research partner, Adam Astrada, to share our expertise on this critical topic.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 border-t border-outline-variant/10 flex justify-between items-center mt-4">
+                    <span class="text-xs text-on-surface-variant">5 min read</span>
+                    <a href="#" class="inline-flex items-center gap-1 text-secondary text-sm font-bold hover:gap-2 transition-all">
+                        Read reflection <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Post 8: GWS Medika Woundcare Workshop -->
+            <div class="bg-white/50 border border-outline-variant/20 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-500 flex flex-col justify-between group">
+                <div>
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="images/gws_woundcare_workshop.jpg" alt="GWS Medika Woundcare Workshop group photo" class="absolute inset-0 w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" />
+                    </div>
+                    <div class="p-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="text-xs text-secondary font-bold uppercase">Workshop & Speaking</span>
+                            <span class="text-xs text-on-surface-variant">• October 2024</span>
+                        </div>
+                        <h3 class="font-headline-sm text-lg text-primary mb-3">
+                            Speaking at the GWS Medika Woundcare Workshop
+                        </h3>
+                        <p class="font-body-md text-on-surface-variant text-sm line-clamp-3">
+                            I recently had the privilege of participating as a speaker at the Woundcare Workshop organized by GWS Medika. The event was a remarkable gathering of healthcare professionals, researchers, and practitioners — including Rafael Mazuz, whose insights were truly wonderful, and my research partner Adam Astrada. A huge thank you to everyone who attended and engaged in meaningful discussions.
+                        </p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 border-t border-outline-variant/10 flex justify-between items-center mt-4">
+                    <span class="text-xs text-on-surface-variant">4 min read</span>
+                    <a href="#" class="inline-flex items-center gap-1 text-secondary text-sm font-bold hover:gap-2 transition-all">
+                        Read reflection <span class="material-symbols-outlined text-xs">arrow_forward</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full rounded-t-xl mt-12">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-12 gap-8 max-w-container-max mx-auto">
+        <div class="flex flex-col gap-2 items-center md:items-start">
+            <span class="font-headline-sm text-headline-sm font-bold text-on-primary">Gimanaya</span>
+            <p class="text-on-primary-container font-body-md">© 2026 Ns. Eka Putri Yulianti, S.Kep., M.Kep. All rights reserved.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 md:gap-10">
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="https://orcid.org/0009-0003-6643-0353" target="_blank">ORCID</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="mailto:eka.putri31@ui.ac.id">Email</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="https://www.linkedin.com/in/ekaputriyulianti" target="_blank">LinkedIn</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="#">Privacy Policy</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="#">Terms</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Micro-interactions for smooth revealing of elements
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Publications | Gimanaya | Eka Putri Yulianti</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#191c1e",
+                        "surface-container-low": "#eff4ff",
+                        "on-tertiary-fixed-variant": "#444749",
+                        "on-primary-container": "#8590a6",
+                        "inverse-primary": "#bcc7de",
+                        "on-background": "#0b1c30",
+                        "outline-variant": "#c5c6cd",
+                        "background": "#f8f9ff",
+                        "on-primary-fixed-variant": "#3c475a",
+                        "tertiary-container": "#26292b",
+                        "error": "#ba1a1a",
+                        "secondary-fixed-dim": "#6bd8cb",
+                        "secondary-container": "#86f2e4",
+                        "primary-fixed": "#d8e3fb",
+                        "on-surface": "#0b1c30",
+                        "on-tertiary-container": "#8d9092",
+                        "tertiary": "#111516",
+                        "surface-dim": "#cbdbf5",
+                        "primary": "#091426",
+                        "surface-container-high": "#dce9ff",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#89f5e7",
+                        "error-container": "#ffdad6",
+                        "inverse-surface": "#213145",
+                        "primary-container": "#1e293b",
+                        "surface": "#f8f9ff",
+                        "on-primary-fixed": "#111c2d",
+                        "on-primary": "#ffffff",
+                        "on-secondary-fixed-variant": "#005049",
+                        "on-surface-variant": "#45474c",
+                        "surface-tint": "#545f73",
+                        "secondary": "#006a61",
+                        "inverse-on-surface": "#eaf1ff",
+                        "on-error": "#ffffff",
+                        "primary-fixed-dim": "#bcc7de",
+                        "tertiary-fixed-dim": "#c4c7c9",
+                        "tertiary-fixed": "#e0e3e5",
+                        "surface-variant": "#d3e4fe",
+                        "on-secondary-fixed": "#00201d",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-error-container": "#93000a",
+                        "on-tertiary": "#ffffff",
+                        "outline": "#75777d",
+                        "surface-container": "#e5eeff",
+                        "surface-bright": "#f8f9ff",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-container": "#006f66"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "stack-md": "24px",
+                        "stack-lg": "48px",
+                        "container-max": "1280px",
+                        "margin-mobile": "20px",
+                        "stack-sm": "8px",
+                        "margin-desktop": "64px",
+                        "section-gap": "120px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Playfair Display"],
+                        "body-lg": ["Plus Jakarta Sans"],
+                        "display-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "caption": ["Plus Jakarta Sans"],
+                        "display-lg": ["Playfair Display"],
+                        "body-md": ["Plus Jakarta Sans"],
+                        "label-md": ["Plus Jakarta Sans"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "display-lg-mobile": ["32px", {"lineHeight": "1.2", "fontWeight": "700"}],
+                        "headline-md": ["30px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "caption": ["12px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "display-lg": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background-color: rgba(248, 249, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 70% 30%, rgba(134, 242, 228, 0.1) 0%, transparent 50%);
+        }
+        .editorial-rule {
+            height: 0.5px;
+            background-color: #CBD5E1;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface font-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed">
+
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 glass-nav">
+    <div class="flex items-center justify-between px-6 md:px-16 py-4 max-w-container-max mx-auto">
+        <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">clinical_notes</span>
+            <span class="font-headline-md text-headline-md font-bold text-primary">Gimanaya</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="index.html">Home</a>
+            <a class="text-secondary font-bold border-b-2 border-secondary transition-colors duration-300" href="publications.html">Publications</a>
+            <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="projects.html">Projects</a>
+            <a class="text-on-surface-variant font-body-md hover:text-secondary transition-colors duration-300" href="blog.html">Blog</a>
+        </nav>
+        <button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md hover:bg-secondary transition-all active:opacity-70" onclick="window.location.href='connect.html'">
+            Connect
+        </button>
+    </div>
+</header>
+
+<main class="pt-24">
+    <!-- Intro / Hero Area -->
+    <section class="relative px-6 md:px-16 py-16 md:py-24 hero-gradient max-w-container-max mx-auto">
+        <div class="max-w-3xl">
+            <span class="font-caption text-caption uppercase tracking-wider text-secondary font-bold mb-3 block">Scholarly Works</span>
+            <h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-primary mb-6">
+                Our Publications
+            </h1>
+            <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                Exploring the intersection of nursing science, clinical psychiatric protocols, and digital health innovations. All scientific articles are published in esteemed, peer-reviewed international journals.
+            </p>
+        </div>
+    </section>
+
+    <!-- Publications List -->
+    <section class="px-6 md:px-16 pb-20 max-w-container-max mx-auto">
+        <div class="editorial-rule mb-12"></div>
+        <div class="space-y-12">
+            <!-- Publication 1 -->
+            <div class="group p-8 md:p-12 bg-white/70 rounded-xl border border-outline-variant/30 hover:border-secondary/20 transition-all duration-500 hover:shadow-xl">
+                <div class="flex flex-wrap items-center gap-3 mb-6">
+                    <span class="px-4 py-1.5 bg-primary/5 text-primary text-xs font-bold rounded-full uppercase tracking-wider">Systematic Review</span>
+                    <span class="px-4 py-1.5 bg-secondary/5 text-secondary text-xs font-bold rounded-full uppercase tracking-wider">NLP & Mental Health</span>
+                </div>
+                <h3 class="font-display-lg text-2xl md:text-3xl text-primary mb-4 leading-snug group-hover:text-secondary transition-colors duration-300">
+                    Feelings behind words: A systematic review on how effective is NLP-based assessment for mental health diagnosis in human studies
+                </h3>
+                <p class="text-on-surface-variant font-body-md leading-relaxed mb-6">
+                    NLP-based AI holds promise for mental health diagnostics in clinical settings, but it requires interactive models, clear clinical targets, diverse real-world data, broad cohort inclusion, balanced and standardised validation, and culturally adaptive models.
+                </p>
+                <div class="flex flex-wrap gap-4 items-center justify-between pt-6 border-t border-outline-variant/20">
+                    <span class="text-xs text-on-surface-variant font-medium">Published in Peer-Reviewed Journal • UI/UX & Clinical AI</span>
+                    <a href="#" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Access Full Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Publication 2 -->
+            <div class="group p-8 md:p-12 bg-white/70 rounded-xl border border-outline-variant/30 hover:border-secondary/20 transition-all duration-500 hover:shadow-xl">
+                <div class="flex flex-wrap items-center gap-3 mb-6">
+                    <span class="px-4 py-1.5 bg-primary/5 text-primary text-xs font-bold rounded-full uppercase tracking-wider">Web Application Evaluation</span>
+                    <span class="px-4 py-1.5 bg-secondary/5 text-secondary text-xs font-bold rounded-full uppercase tracking-wider">Digital Health</span>
+                </div>
+                <h3 class="font-display-lg text-2xl md:text-3xl text-primary mb-4 leading-snug group-hover:text-secondary transition-colors duration-300">
+                    Empowering cadres: the impact of KEPITING, a web-based application on stunting knowledge and attitudes
+                </h3>
+                <p class="text-on-surface-variant font-body-md leading-relaxed mb-6">
+                    A web-based platform enhances cadre knowledge and attitudes but requires usability enhancements for optimal impact, which highlights the importance of digital tools in stunting interventions and suggests areas for future research focusing on usability and long-term efficacy.
+                </p>
+                <div class="flex flex-wrap gap-4 items-center justify-between pt-6 border-t border-outline-variant/20">
+                    <span class="text-xs text-on-surface-variant font-medium">Published in Health Informatics • Mobile & Web Interventions</span>
+                    <a href="#" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Access Full Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Publication 3 -->
+            <div class="group p-8 md:p-12 bg-white/70 rounded-xl border border-outline-variant/30 hover:border-secondary/20 transition-all duration-500 hover:shadow-xl">
+                <div class="flex flex-wrap items-center gap-3 mb-6">
+                    <span class="px-4 py-1.5 bg-primary/5 text-primary text-xs font-bold rounded-full uppercase tracking-wider">Standardized Protocol</span>
+                    <span class="px-4 py-1.5 bg-secondary/5 text-secondary text-xs font-bold rounded-full uppercase tracking-wider">Clinical Nursing</span>
+                </div>
+                <h3 class="font-display-lg text-2xl md:text-3xl text-primary mb-4 leading-snug group-hover:text-secondary transition-colors duration-300">
+                    Psychiatric Nurse-Led Assertiveness Therapy: A Standardized Protocol for the Reduction of Violent Behavior in Schizophrenia
+                </h3>
+                <p class="text-on-surface-variant font-body-md leading-relaxed mb-6">
+                    A five-session nurse-led assertiveness training combined with standard care significantly enhanced hospitalized schizophrenia patients' ability to recognize and control violent behavior, resulting in robust reductions in their overall behavioral symptoms.
+                </p>
+                <div class="flex flex-wrap gap-4 items-center justify-between pt-6 border-t border-outline-variant/20">
+                    <span class="text-xs text-on-surface-variant font-medium">Published in Clinical Psychiatry • Intervention Protocol</span>
+                    <a href="#" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Access Full Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Publication 4 -->
+            <div class="group p-8 md:p-12 bg-white/70 rounded-xl border border-outline-variant/30 hover:border-secondary/20 transition-all duration-500 hover:shadow-xl">
+                <div class="flex flex-wrap items-center gap-3 mb-6">
+                    <span class="px-4 py-1.5 bg-primary/5 text-primary text-xs font-bold rounded-full uppercase tracking-wider">Development & Evaluation</span>
+                    <span class="px-4 py-1.5 bg-secondary/5 text-secondary text-xs font-bold rounded-full uppercase tracking-wider">VR Therapy</span>
+                    <span class="px-4 py-1.5 bg-tertiary/10 text-tertiary text-xs font-bold rounded-full uppercase tracking-wider">Open Access PDF</span>
+                </div>
+                <h3 class="font-display-lg text-2xl md:text-3xl text-primary mb-4 leading-snug group-hover:text-secondary transition-colors duration-300">
+                    Improving or worsening?: the development and evaluation of a VR-based psychotherapy to bullying victims and perpetrators in school adolescents
+                </h3>
+                <p class="text-on-surface-variant font-body-md leading-relaxed mb-6">
+                    A four-session VR-based emotional regulation intervention reduced self-perceived bullying behaviors among adolescents, particularly males. However, it also increased self-reported emotional difficulties, likely by enhancing self-awareness of bullying experiences. Overall, students rated the VR module positively, suggesting that VR may be an effective anti-bullying tool when combined with appropriate counseling and support services.
+                </p>
+                <div class="flex flex-wrap gap-4 items-center justify-between pt-6 border-t border-outline-variant/20">
+                    <span class="text-xs text-on-surface-variant font-medium">Published in JNERS (Universitas Airlangga) • School Mental Health & VR Intervention</span>
+                    <a href="https://e-journal.unair.ac.id/JNERS/article/view/71145" target="_blank" class="inline-flex items-center gap-2 text-secondary font-bold hover:gap-4 transition-all">
+                        Access Full Article <span class="material-symbols-outlined text-sm">open_in_new</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs Section -->
+    <section class="px-6 md:px-16 py-section-gap max-w-container-max mx-auto bg-white/50">
+        <div class="mb-16">
+            <div class="editorial-rule mb-8"></div>
+            <h2 class="font-headline-md text-headline-md text-primary">Frequently Asked Questions</h2>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- FAQ 1 -->
+            <div class="p-6 bg-white/40 rounded-lg">
+                <h4 class="font-headline-sm text-lg text-primary font-bold mb-3">What types of publications can I find on this page?</h4>
+                <p class="font-body-md text-on-surface-variant">This page features peer-reviewed scientific publications, evaluations of digital systems, and clinical study research across psychiatric nursing and AI.</p>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="p-6 bg-white/40 rounded-lg">
+                <h4 class="font-headline-sm text-lg text-primary font-bold mb-3">Are all publications peer-reviewed?</h4>
+                <p class="font-body-md text-on-surface-variant">Yes, all scientific publications listed are from esteemed international journals (ranking Q1 to Q3).</p>
+            </div>
+            <!-- FAQ 3 -->
+            <div class="p-6 bg-white/40 rounded-lg">
+                <h4 class="font-headline-sm text-lg text-primary font-bold mb-3">Can I access full articles here?</h4>
+                <p class="font-body-md text-on-surface-variant">Yes, each publication contains a direct "Access Full Article" link leading directly to the publisher's portal or full PDF repository.</p>
+            </div>
+            <!-- FAQ 4 -->
+            <div class="p-6 bg-white/40 rounded-lg">
+                <h4 class="font-headline-sm text-lg text-primary font-bold mb-3">How often is this page updated?</h4>
+                <p class="font-body-md text-on-surface-variant">The publications list is updated dynamically as new research outcomes, web evaluations, or clinical protocols are published.</p>
+            </div>
+            <!-- FAQ 5 -->
+            <div class="p-6 bg-white/40 rounded-lg">
+                <h4 class="font-headline-sm text-lg text-primary font-bold mb-3">What research topics does Gimanaya focus on?</h4>
+                <p class="font-body-md text-on-surface-variant">Gimanaya specializes in natural language processing (NLP), psychiatric and mental health nursing, implementation science, and nursing informatics.</p>
+            </div>
+            <!-- FAQ 6 -->
+            <div class="p-6 bg-white/40 rounded-lg">
+                <h4 class="font-headline-sm text-lg text-primary font-bold mb-3">Is there contact information for collaboration?</h4>
+                <p class="font-body-md text-on-surface-variant">Absolutely! Reach out via the "Connect" button in the navigation header or use the contact details in the footer to start a discussion.</p>
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-primary text-on-primary w-full rounded-t-xl mt-12">
+    <div class="flex flex-col md:flex-row justify-between items-center px-6 md:px-16 py-12 gap-8 max-w-container-max mx-auto">
+        <div class="flex flex-col gap-2 items-center md:items-start">
+            <span class="font-headline-sm text-headline-sm font-bold text-on-primary">Gimanaya</span>
+            <p class="text-on-primary-container font-body-md">© 2024 Eka Putri Yulianti. All rights reserved.</p>
+        </div>
+        <div class="flex flex-wrap justify-center gap-6 md:gap-10">
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="https://orcid.org/0009-0003-6643-0353" target="_blank">ORCID</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="mailto:eka.putri31@ui.ac.id">Email</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="https://www.linkedin.com/in/ekaputriyulianti" target="_blank">LinkedIn</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="#">Privacy Policy</a>
+            <a class="text-on-primary-container hover:text-secondary-fixed transition-colors font-body-md" href="#">Terms</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Micro-interactions for smooth revealing of elements
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    });
+</script>
+</body>
+</html>
