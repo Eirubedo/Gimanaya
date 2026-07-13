@@ -177,7 +177,7 @@
 </div>
 <div>
 <h3 class="font-headline-sm text-headline-sm text-primary">Ns. Eka Putri Yulianti, S.Kep., M.Kep</h3>
-<p class="font-body-md text-body-md text-on-surface-variant">Research Assistant, Universitas Indonesia</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Research Assistant, Universitas Indonesia • LPDP Awardee PK-236</p>
 <p class="font-caption text-caption uppercase tracking-wider text-secondary font-bold">Psychiatric Nursing × Technology</p>
 </div>
 </div>
@@ -194,8 +194,8 @@
 </section>
 
 <!-- Join & Question Statement -->
-<section class="px-6 md:px-16 py-16 max-w-container-max mx-auto text-center">
-    <p class="font-display-lg text-2xl md:text-3xl text-primary font-bold leading-relaxed max-w-3xl mx-auto italic">
+<section class="px-6 md:px-16 py-20 max-w-container-max mx-auto text-center overflow-hidden">
+    <p class="statement-text font-display-lg text-3xl md:text-5xl text-primary font-bold leading-relaxed max-w-4xl mx-auto italic transform scale-90 opacity-0 blur-md transition-all duration-[1500ms] ease-out">
         "You are welcome to join. But more than that, I invite you to question alongside me."
     </p>
 </section>
@@ -346,6 +346,20 @@
                 section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
                 observer.observe(section);
             });
+
+            // Special observer for dramatic quote reveal
+            const quoteEl = document.querySelector('.statement-text');
+            if (quoteEl) {
+                const quoteObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            quoteEl.classList.add('opacity-100', 'scale-100', 'blur-0');
+                            quoteEl.classList.remove('opacity-0', 'scale-90', 'blur-md');
+                        }
+                    });
+                }, { threshold: 0.1 });
+                quoteObserver.observe(quoteEl);
+            }
         });
     </script>
 
