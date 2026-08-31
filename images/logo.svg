@@ -1,8 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="100%" height="100%">
-    <!-- Definitions for styling and fonts -->
     <style>
         .brand-text {
-            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            font-family: 'Glacial Indifference', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             font-weight: 800;
             font-size: 60px;
             letter-spacing: -0.03em;
@@ -19,19 +18,14 @@
         }
     </style>
 
-    <!-- Logo Flower Group (Centered horizontally at X=70, Y=60) -->
+    <!-- Logo Flower Group (Centered at X=70, Y=60) -->
     <g id="logo-flower">
         <!-- Grey Question Marks (Rotated around 70, 60) -->
         <g class="question-mark-sub" fill="#4d4d4d" text-anchor="middle">
-            <!-- 60 deg -->
             <text x="70" y="32" transform="rotate(60, 70, 60)">?</text>
-            <!-- 120 deg -->
             <text x="70" y="32" transform="rotate(120, 70, 60)">?</text>
-            <!-- 180 deg (bottom) -->
             <text x="70" y="32" transform="rotate(180, 70, 60)">?</text>
-            <!-- 240 deg -->
             <text x="70" y="32" transform="rotate(240, 70, 60)">?</text>
-            <!-- 300 deg -->
             <text x="70" y="32" transform="rotate(300, 70, 60)">?</text>
         </g>
         
@@ -42,7 +36,7 @@
         <text class="question-mark-main" x="70" y="24" fill="#dd5d1b" text-anchor="middle">?</text>
     </g>
 
-    <!-- Brand Logotype (Vertically aligned) -->
+    <!-- Brand Logotype -->
     <text class="brand-text" x="140" y="78" text-anchor="start">
         <tspan fill="#4d4d4d">gimana</tspan><tspan fill="#dd5d1b">ya</tspan>
     </text>
