@@ -13,13 +13,13 @@ class Petal {
         this.speedY = Math.random() * 0.8 + 0.4; // Drifting speed: slow and floating
         this.speedX = Math.random() * 0.6 - 0.3; // Gentle side drift
         
-        // 2D Rotation (roll/spin on 2D plane)
+        // 2D Rotation (roll/spin on 2D plane) - very very slowly
         this.rotation = Math.random() * Math.PI * 2;
-        this.rotationSpeed = Math.random() * 0.015 - 0.0075;
+        this.rotationSpeed = Math.random() * 0.004 - 0.002;
         
-        // 3D Yaw Rotation (flipping/tumbling along horizontal axis)
+        // 3D Yaw Rotation (flipping/tumbling along horizontal axis) - quite slow
         this.yaw = Math.random() * Math.PI * 2;
-        this.yawSpeed = Math.random() * 0.04 + 0.02; // Tumbling speed
+        this.yawSpeed = Math.random() * 0.01 + 0.005; // Tumbling speed: slow and gentle
         
         this.opacity = Math.random() * 0.15 + 0.05; // 5% to 20% opacity (subtle, non-distracting)
         
