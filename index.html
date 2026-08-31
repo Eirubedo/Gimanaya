@@ -356,24 +356,25 @@
 </footer>
 <script>
         // Micro-interactions for smooth revealing of elements
-        document.addEventListener('DOMContentLoaded', () => {
-            const observerOptions = {
-                threshold: 0.1
-            };
+        document.addEventListener('DOMContentLoaded', () => {        const observerOptions = {
+            threshold: 0.01  // Highly sensitive for mobile viewports
+        };
 
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('opacity-100', 'translate-y-0');
-                        entry.target.classList.remove('opacity-0', 'translate-y-10');
-                    }
-                });
-            }, observerOptions);
-
-            document.querySelectorAll('section').forEach(section => {
-                section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
-                observer.observe(section);
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
             });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach((section, index) => {
+            // Keep the first section (hero fold) visible instantly on load to avoid blank mobile screens
+            if (index === 0) return;
+            section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
 
             // Special observer for dramatic quote reveal
             const quoteEl = document.querySelector('.statement-text');

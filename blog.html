@@ -657,7 +657,7 @@
     // Micro-interactions for smooth revealing of elements
     document.addEventListener('DOMContentLoaded', () => {
         const observerOptions = {
-            threshold: 0.1
+            threshold: 0.01  // Highly sensitive for mobile viewports
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -669,7 +669,9 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('section').forEach(section => {
+        document.querySelectorAll('section').forEach((section, index) => {
+            // Keep the first section (hero fold) visible instantly on load to avoid blank mobile screens
+            if (index === 0) return;
             section.classList.add('transition-all', 'duration-1000', 'ease-out', 'opacity-0', 'translate-y-10');
             observer.observe(section);
         });
