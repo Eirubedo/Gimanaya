@@ -251,7 +251,49 @@
                     </p>
 <div class="flex flex-col md:flex-row md:items-center gap-6 pt-8 border-t border-outline-variant/30">
 <div class="flex-shrink-0">
-<div class="w-16 h-16 rounded-full bg-surface-container-high overflow-hidden" data-alt="Professional studio portrait of Eka Putri Yulianti, a female academic researcher with a serene and intelligent expression. She is set against a soft, warm off-white background with subtle teal lighting accents. The style is modern, minimal, and high-prestige, echoing the clean aesthetic of healthcare technology and academic excellence." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA65x3z-WvRa6j3PJBonV3goI1Ei2tjWbcQVeW3905l2ryZ86Zn1wPVAUPxlaBAqoSxyxfqh4HWhSW0QV_BKjGo3E-Sth3Jw4w0K7OEi6tk-Eh8BDVw4l-GJV4LRM5cL9UBl0ei58xzwIh8rSeGwFE46QOiYxEBZ1PRcCxBmc7PeXfqP553TxYkP-4Q54rF0iSjYt24AorXHYtrvzhpnS8FlJ2536NoQJn98dlA31qnoOxAVWMs-m0dCtu2ir6YppMTavp2pkEAhpjr')"></div>
+    <div class="w-16 h-16 rounded-2xl bg-[#fff0e9] border border-[#ffd3c0]/50 flex items-center justify-center overflow-hidden">
+        <!-- Looping Animated Peach Logo Mark -->
+        <svg class="w-12 h-12" viewBox="0 0 200 200">
+            <style>
+                @keyframes pulsePeachCircle {
+                    0%, 100% { transform: scale(0.95); fill: #ff9e79; }
+                    50% { transform: scale(1.1); fill: #ff7d4a; }
+                }
+                @keyframes highlightPeach {
+                    0%, 100% { opacity: 0.35; stroke: #ffaa85; transform: scale(0.95); }
+                    15% { opacity: 1; stroke: #ff7d4a; transform: scale(1.05); }
+                    30% { opacity: 0.35; stroke: #ffaa85; transform: scale(0.95); }
+                }
+                .loop-peach-circle {
+                    transform-origin: 100px 100px;
+                    animation: pulsePeachCircle 3s infinite ease-in-out;
+                }
+                .loop-peach-q {
+                    transform-origin: 100px 100px;
+                    opacity: 0.35;
+                    animation: highlightPeach 3.5s infinite ease-in-out;
+                }
+            </style>
+            <!-- Central Circle -->
+            <circle class="loop-peach-circle" cx="100" cy="100" r="14" fill="#ff7d4a" />
+            
+            <!-- Group of Question Marks with staggered counter-clockwise delays -->
+            <g fill="none" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+                <!-- 0 deg (top) - delay 0s -->
+                <path class="loop-peach-q" style="animation-delay: 0s;" stroke="#ff7d4a" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" />
+                <!-- 300 deg (top-left) - delay 0.58s -->
+                <path class="loop-peach-q" style="animation-delay: 0.58s;" stroke="#ff7d4a" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(300, 100, 100)" />
+                <!-- 240 deg (bottom-left) - delay 1.16s -->
+                <path class="loop-peach-q" style="animation-delay: 1.16s;" stroke="#ff7d4a" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(240, 100, 100)" />
+                <!-- 180 deg (bottom) - delay 1.74s -->
+                <path class="loop-peach-q" style="animation-delay: 1.74s;" stroke="#ff7d4a" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(180, 100, 100)" />
+                <!-- 120 deg (bottom-right) - delay 2.32s -->
+                <path class="loop-peach-q" style="animation-delay: 2.32s;" stroke="#ff7d4a" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(120, 100, 100)" />
+                <!-- 60 deg (top-right) - delay 2.9s -->
+                <path class="loop-peach-q" style="animation-delay: 2.9s;" stroke="#ff7d4a" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(60, 100, 100)" />
+            </g>
+        </svg>
+    </div>
 </div>
 <div>
 <h3 class="font-headline-sm text-headline-sm text-primary">Ns. Eka Putri Yulianti, S.Kep., M.Kep</h3>
