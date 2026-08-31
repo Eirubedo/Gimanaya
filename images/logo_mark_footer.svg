@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+    <!-- Central Orange Circle -->
+    <circle cx="100" cy="100" r="12" fill="#dd5d1b" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Group of Question Marks -->
+    <g fill="none" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+        <!-- 0 deg (top) - Highlight Orange -->
+        <path stroke="#dd5d1b" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" />
+        
+        <!-- 60 deg - white-->
+        <path stroke="#ffffff" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(60, 100, 100)" />
+        
+        <!-- 120 deg - white-->
+        <path stroke="#ffffff" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(120, 100, 100)" />
+        
+        <!-- 180 deg - white-->
+        <path stroke="#ffffff" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(180, 100, 100)" />
+        
+        <!-- 240 deg - white-->
+        <path stroke="#ffffff" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(240, 100, 100)" />
+        
+        <!-- 300 deg - white-->
+        <path stroke="#ffffff" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(300, 100, 100)" />
+    </g>
+</svg>
