@@ -36,8 +36,8 @@
         <text class="question-mark-main" x="70" y="24" fill="#dd5d1b" text-anchor="middle">?</text>
     </g>
 
-    <!-- Brand Logotype -->
+    <!-- Brand Logotype (gımana in grey, ya in orange) -->
     <text class="brand-text" x="140" y="78" text-anchor="start">
-        <tspan fill="#4d4d4d">gimana</tspan><tspan fill="#dd5d1b">ya</tspan>
+        <tspan fill="#4d4d4d">gımana</tspan><tspan fill="#dd5d1b">ya</tspan>
     </text>
 </svg>
