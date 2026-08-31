@@ -133,7 +133,31 @@
 <header class="fixed top-0 w-full z-50 glass-nav">
 <div class="flex items-center justify-between px-6 md:px-16 py-4 max-w-container-max mx-auto">
 <a href="index.html" class="flex items-center gap-2">
-            <img src="images/logo.svg" alt="Gimanaya Logo" class="h-8 md:h-10 object-contain" />
+            <!-- Inline SVG Logo Mark -->
+            <svg class="h-8 w-8" viewBox="0 0 200 200">
+                <!-- Central Orange Circle -->
+                <circle cx="100" cy="100" r="12" fill="#dd5d1b" stroke="#ffffff" stroke-width="2" />
+                
+                <!-- Group of Question Marks -->
+                <g fill="none" stroke-width="12" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- 0 deg (top) - Orange -->
+                    <path stroke="#dd5d1b" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" />
+                    <!-- 60 deg - Grey -->
+                    <path stroke="#4d4d4d" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(60, 100, 100)" />
+                    <!-- 120 deg - Grey -->
+                    <path stroke="#4d4d4d" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(120, 100, 100)" />
+                    <!-- 180 deg - Grey -->
+                    <path stroke="#4d4d4d" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(180, 100, 100)" />
+                    <!-- 240 deg - Grey -->
+                    <path stroke="#4d4d4d" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(240, 100, 100)" />
+                    <!-- 300 deg - Grey -->
+                    <path stroke="#4d4d4d" d="M 100 78 L 100 68 C 100 50, 78 52, 78 40 C 78 28, 98 25, 112 33 C 124 40, 122 56, 108 58" transform="rotate(300, 100, 100)" />
+                </g>
+            </svg>
+            <!-- Brand Logo Type text (fully style-able) -->
+            <span class="font-bold text-lg tracking-tight font-body-lg">
+                <span class="text-[#4d4d4d]">gimana</span><span class="text-[#dd5d1b]">ya</span>
+            </span>
         </a>
         <nav class="hidden md:flex items-center gap-8">
             <a class="text-secondary font-bold border-b-2 border-secondary transition-colors duration-300" href="index.html">Home</a>
