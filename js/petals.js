@@ -12,8 +12,15 @@ class Petal {
         this.size = Math.random() * 8 + 6; // Petal sizes: 6px to 14px
         this.speedY = Math.random() * 0.8 + 0.4; // Drifting speed: slow and floating
         this.speedX = Math.random() * 0.6 - 0.3; // Gentle side drift
+        
+        // 2D Rotation (roll/spin on 2D plane)
         this.rotation = Math.random() * Math.PI * 2;
         this.rotationSpeed = Math.random() * 0.015 - 0.0075;
+        
+        // 3D Yaw Rotation (flipping/tumbling along horizontal axis)
+        this.yaw = Math.random() * Math.PI * 2;
+        this.yawSpeed = Math.random() * 0.04 + 0.02; // Tumbling speed
+        
         this.opacity = Math.random() * 0.15 + 0.05; // 5% to 20% opacity (subtle, non-distracting)
         
         // Brand color mapping: 40% Orange, 60% Soft Grey/White
@@ -23,7 +30,9 @@ class Petal {
     update() {
         this.y += this.speedY;
         this.x += this.speedX + Math.sin(this.y / 40) * 0.15; // Swaying motion
+        
         this.rotation += this.rotationSpeed;
+        this.yaw += this.yawSpeed; // Tumbling spin
         
         // Reset when passing screen bounds
         if (this.y > this.canvas.height + 20 || this.x < -20 || this.x > this.canvas.width + 20) {
@@ -34,6 +43,10 @@ class Petal {
         this.ctx.save();
         this.ctx.translate(this.x, this.y);
         this.ctx.rotate(this.rotation);
+        
+        // Simulate 3D yaw by scaling width using cosine of the yaw angle
+        this.ctx.scale(Math.cos(this.yaw), 1);
+        
         this.ctx.beginPath();
         
         // Draw organic teardrop / flower petal vector path
